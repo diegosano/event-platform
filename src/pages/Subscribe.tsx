@@ -5,6 +5,8 @@ import { Logo } from "../components/Logo";
 
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
+import CodeImage from '../assets/code-mockup.png';
+
 export function Subscribe() {
   const navigate = useNavigate();
 
@@ -68,7 +70,7 @@ export function Subscribe() {
         </div>
       </div>
 
-      <img src="/src/assets/code-mockup.png" alt="Visual Studio IDE with code" className="mt-10" />
+      <img src={CodeImage} alt="Visual Studio IDE with code" className="mt-10" />
     </div>
   )
 }
